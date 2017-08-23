@@ -250,4 +250,28 @@ input,a{
 .lunbo-nav ul .select{
 	background:pink;
 }
-
+.index-center{
+	width:1100px;
+	margin:0 auto;
+	position:relative;
+}
+.index-nav-left{
+	position:absolute;
+	z-index: 1;
+}
+.index-nav-title{
+	padding-left:22px;
+	width:208px;
+	height:52px;
+	float:left;
+	margin-top:-49px;
+	line-height: 50px;
+	color:#fff;
+	background:#ff3893;
+	z-index: 2;
+}
+.index-nav-list{
+	width:230px;
+	height:593px;
+	background:rgba(255,255,255,0.7);
+}
