@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1503472877053'); /* IE9*/
-  src: url('iconfont.eot?t=1503472877053#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1503472877053') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1503472877053') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1503472877053#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1503543568719'); /* IE9*/
+  src: url('iconfont.eot?t=1503543568719#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1503543568719') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1503543568719') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1503543568719#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -19,7 +19,15 @@
 
 .icon-phone:before { content: "\e611"; }
 
+.icon-weibo1:before { content: "\e7e5"; }
+
+.icon-weibo:before { content: "\e605"; }
+
 .icon-weixin:before { content: "\e601"; }
 
 .icon-weixin-:before { content: "\e60b"; }
+
+.icon-jiantouyou:before { content: "\e62e"; }
+
+.icon-jiantouxia:before { content: "\e62d"; }
 

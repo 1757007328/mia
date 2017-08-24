@@ -18,6 +18,7 @@ h1,h2,h3,h4,h5,h6{
 }
 body{
 	font-size:12px; font-family:"微软雅黑";
+	background:#f9f9f9;
 }
 input,a{
 	outline:none;
@@ -175,6 +176,7 @@ input,a{
 }
 .index-nav-ul li{
 	float:left;
+	height:46px;
 }
 .index-nav-ul li a{
 	float:left;
@@ -190,15 +192,28 @@ input,a{
 }
 .index-nav-ul li:nth-of-type(4){
 	position:relative;
-	
+}
+
+.index-nav-ul li:nth-of-type(4) span{
+	display: inline-block;
+	width:12px;
+	height:13px;
+	font-size:10px;
+	font-family: iconfont;
+	margin-left:5px;
+	transition: transform .4s;
+}
+.index-nav-ul li:nth-of-type(4):hover span{
+	transform: scale(-1,1);
 }
 .index-nav-ul li .nav-second{
 	top:46px;
-	width:104px;
+	width:81px;
 	position:absolute;
 	z-index: 3;
 }
 .index-nav-ul li .nav-second a{
+	width:81px;
 	float:left;
 	color:#666;
 	background:#fff;
@@ -274,4 +289,95 @@ input,a{
 	width:230px;
 	height:593px;
 	background:rgba(255,255,255,0.7);
+}
+.index-nav-list dl{
+	float:left;
+}
+.index-nav-list dl dt{
+	padding:0 12px;
+}
+
+
+
+
+
+.index-nav-lists{
+	width:186px;
+	height:60px;
+	padding:5px 10px 9px;
+	border-top:1px dashed #d1d1d1;
+}
+.index-nav-lists strong{
+	width:182px;
+	height:21px;
+}
+.index-nav-lists p{
+	width:170px;
+	height:36px;
+	margin-top:3px;
+}
+.index-nav-lists strong a{
+	font-size:14px;
+	color:#fb60a7;
+}
+.index-nav-lists p a{
+	margin:2px 5px  0 2px;
+}
+.hot-brand-width{
+	width:1100px;
+	margin:0 auto;
+}
+.hot-brand{
+	width:860px;
+	height:105px;
+	margin-left:240px;
+	margin-top:10px;
+	background:#fff;
+}
+.hot-brands{
+	float:left;
+}
+.hot-brands a{
+	float:left;
+	width:94px;
+	margin:0 12px;
+}
+.hot-brands a img{
+	width:94px;
+}
+
+.hot-brand p{
+	width:56px;
+	height:21px;
+	padding:0 27px;
+	line-height: 105px;
+	display: block;
+	float:left;
+	font-size:14px;
+}
+.index-ad{
+	width:1100px;
+	height:240px;
+	margin:10px auto;
+	
+}
+.index-forYou{
+	width:1100px;
+	height:737px;
+	margin:25px auto 0;
+	background:pink;
+}
+.index-forYou-tit{
+	height:36px;
+}
+.index-forYou-tit h3{
+	display:inline-block;
+	font-size:24px;
+	font-weight: 900;
+}
+.index-forYou-tit h3 span{
+	font-size:18px;
+	font-weight: 100;
+	color:#666666;
+	margin-left:15px;
 }
