@@ -5,8 +5,6 @@
 		<meta charset="UTF-8">
 		<title>mia</title>
 		<link rel="stylesheet" href="css/index.css" type="text/css" />
-		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
-		<script src="js/index.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -91,359 +89,76 @@
 					<div class="index-nav-title">
 						<h2>全部商品分类</h2>
 					</div>
-					<div class="index-nav-list">
-						<dl>
-							<dt>
-								<div class="index-nav-lists">
-									<strong><a href="javascript">奶粉/纸尿裤</a> </strong>
+					<div id="index-nav-list">
+						<ul>
+							<script id="nav" type="text/html">
+								{{each navList as value}}
+								<li>
+									<strong>
+									
+									<a href="#">{{value.navListTit}}</a>
+									
+								
+									</strong>
 									<p>
-										<a href="javascript">奶粉</a>
-										<a href="javascript">羊奶粉</a>
-										<a href="javascript">特配奶粉</a>
-										<a href="javascript">拉拉裤</a>
-										<a href="javascript">宝宝湿巾</a>
-										<a href="javascript">德国爱他美</a>
+									{{each value.navListBody as item1}}
+									<a href="#">{{item1}}</a>
+									{{/each}}
 									</p>
+								</li>	
+								{{/each}}
+							</script>
+						</ul>
+						
+						
+						<div class="navCon">
+							<script id="navCon" type="text/html">
+								<div class="navCon-left">
+									
+										{{each subNavLeft as value}}
+										<dl>
+											<dt>
+												{{value.LeftTit}}
+											</dt>
+											<dd>
+												{{each value.LeftBody as value2}}
+													<a href="#">{{value2}}</a>
+												{{/each}}
+											</dd>
+										</dl>
+										{{/each}}
+									</dl>
 								</div>
-							</dt>
-							<dd>
-								<div class="index-nav-l11">
-									<div>
-										<h3>奶粉专区</h3>
-										<p>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-										</p>
-									</div>
-									<div>
-										<h3>奶粉专区</h3>
-										<p>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-										</p>
-									</div>
-									<div>
-										<h3>奶粉专区</h3>
-										<p>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-										</p>
-									</div>
-									<div>
-										<h3>奶粉专区</h3>
-										<p>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-										</p>
-									</div>
+								<div class="navCon-right">
+									
+										{{each subNavRight as value2}}
+										<dl>
+											<dt>
+												{{value2.RightTit}}
+											</dt>
+											
+												{{each value2.ImgSrc as value21}}
+												<dd>
+													<a href="#"><img src="{{value21}}"/></a>
+												</dd>
+												{{/each}}
+											
+										</dl>
+										{{/each}}
+									
 								</div>
-								<div class="index-nav-l12">
-									<h3>热卖大牌</h3>
-									<p>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/526_brand_logo_img1459856922.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/175_brand_logo_img1459857796.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/44_brand_logo_img1460020310.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/189_brand_logo_img1459857574.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p5/brand/192_brand_logo_img1467099328.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/1_brand_logo_img1459490969.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/8_brand_logo_img1459491005.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/425_brand_logo_img1459490793.png" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/1206_brand_logo_img1459491133.jpg" />
-										</a>
-									</p>
-								</div>
-							</dd>
-
-						</dl>
-
-						<dl>
-							<dt>
-								<div class="index-nav-lists">
-									<strong><a href="javascript">辅食/喂养/洗护</a> </strong>
-									<p>
-										<a href="javascript">米粉</a>
-										<a href="javascript">果泥/肉泥</a>
-										<a href="javascript">溶豆/泡芙</a>
-										<a href="javascript">磨牙饼干</a>
-										<a href="javascript">鱼油/DHA</a>
-										<a href="javascript">钙铁锌</a>
-									</p>
-								</div>
-							</dt>
-							<dd>
-								<div class="index-nav-l11">
-									<div>
-										<h3>奶粉专区</h3>
-										<p>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-										</p>
-									</div>
-									<div>
-										<h3>奶粉专区</h3>
-										<p>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-										</p>
-									</div>
-									<div>
-										<h3>奶粉专区</h3>
-										<p>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-										</p>
-									</div>
-									<div>
-										<h3>奶粉专区</h3>
-										<p>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-										</p>
-									</div>
-								</div>
-								<div class="index-nav-l12">
-									<h3>热卖大牌</h3>
-									<p>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/526_brand_logo_img1459856922.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/175_brand_logo_img1459857796.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/44_brand_logo_img1460020310.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/189_brand_logo_img1459857574.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p5/brand/192_brand_logo_img1467099328.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/1_brand_logo_img1459490969.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/8_brand_logo_img1459491005.jpg" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/425_brand_logo_img1459490793.png" />
-										</a>
-										<a href="javascript">
-											<img src="https://img01.miyabaobei.com/d1/p3/brand/1206_brand_logo_img1459491133.jpg" />
-										</a>
-									</p>
-								</div>
-							</dd>
-						</dl>
-
-						<dl>
-							<dt>
-								<div class="index-nav-lists">
-									<strong><a href="javascript">孕妈用品</a> </strong>
-									<p>
-										<a href="javascript">孕妇装/孕妇裙</a>
-										<a href="javascript">待产/月子用品</a>
-										<a href="javascript">防辐射服</a>
-										<a href="javascript">孕期营养</a>
-									</p>
-								</div>
-							</dt>
-							<dd>
-								<div class="index-nav-l11">
-									<div>
-										<h3>奶粉专区</h3>
-										<p>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-										</p>
-									</div>
-									<div>
-										<h3>奶粉专区</h3>
-										<p>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-										</p>
-									</div>
-									<div>
-										<h3>奶粉专区</h3>
-										<p>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-										</p>
-									</div>
-									<div>
-										<h3>奶粉专区</h3>
-										<p>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-											<a href="#">婴儿奶粉</a>
-										</p>
-									</div>
-								</div>
-							</dd>
-						</dl>
-
-						<dl>
-							<dt>
-								<div class="index-nav-lists">
-									<strong><a href="javascript">童装/童鞋/寝居</a> </strong>
-									<p>
-										<a href="javascript">新生儿礼盒</a>
-										<a href="javascript">连身衣/爬服</a>
-										<a href="javascript"> T恤/POLO衫</a>
-										<a href="javascript">亲子装</a>
-										<a href="javascript">太阳镜</a>
-									</p>
-								</div>
-							</dt>
-							<dd>
-
-							</dd>
-						</dl>
-
-						<dl>
-							<dt>
-								<div class="index-nav-lists">
-									<strong><a href="javascript">玩具/书籍/出行</a> </strong>
-									<p>
-										<a href="javascript">益智</a>
-										<a href="javascript">毛绒/安抚</a>
-										<a href="javascript">牙胶/咬咬胶</a>
-										<a href="javascript">戏水/游泳装备</a>
-										<a href="javascript"> 中文绘本</a>
-									</p>
-								</div>
-							</dt>
-							<dd>
-
-							</dd>
-						</dl>
-
-						<dl>
-							<dt>
-								<div class="index-nav-lists">
-									<strong><a href="javascript">美妆/个护/轻奢</a> </strong>
-									<p>
-										<a href="javascript">防晒/隔离</a>
-										<a href="javascript">化妆水/爽肤水</a>
-										<a href="javascript">面膜</a>
-										<a href="javascript">套装礼盒</a>
-										<a href="javascript">  美体塑身</a>
-									</p>
-								</div>
-							</dt>
-							<dd>
-
-							</dd>
-						</dl>
-
-						<dl>
-							<dt>
-								<div class="index-nav-lists">
-									<strong><a href="javascript">美食/保健</a> </strong>
-									<p>
-										<a href="javascript">干果/果干</a>
-										<a href="javascript">休闲零食</a>
-										<a href="javascript">地方特产</a>
-										<a href="javascript">胶原蛋白</a>
-										<a href="javascript">酵素</a>
-										<a href="javascript">蔓越莓/葡萄籽</a>
-									</p>
-								</div>
-							</dt>
-							<dd>
-
-							</dd>
-						</dl>
-
-						<dl>
-							<dt>
-								<div class="index-nav-lists">
-									<strong><a href="javascript">家居/清洁</a> </strong>
-									<p>
-										<a href="javascript">奶瓶清洁</a>
-										<a href="javascript">消毒液/柔顺剂</a>
-										<a href="javascript">宝宝湿巾</a>
-										<a href="javascript">床上用品</a>
-										<a href="javascript">家居纸品</a>
-									</p>
-								</div>
-							</dt>
-							<dd>
-
-							</dd>
-						</dl>
-
+							</script>
+							
+							
+							
+							
+							
+							
+							
+							
+						</div>
+						
+						
 					</div>
 				</div>
 			</div>
@@ -712,6 +427,11 @@
 			</div>
 		</div>
 		
+		
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/template.js"></script>
+		<script src="js/index.js" type="text/javascript"></script>
 	</body>
 
 </html>
