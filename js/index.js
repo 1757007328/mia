@@ -55,6 +55,12 @@ $(function() {
 		var html = template("nav",data);
 		$("#index-nav-list ul").html(html);
 	})
-	
+	$.get("json/index_list.json",function(data){
+		var html = template("index-list1",data);
+		$(".index-forYou-lists").html(html);
+		
+		var html1 = template("today-list",data);
+		$(".index-today-list").html(html1);
+	})
 	
 })

@@ -639,7 +639,19 @@ a {
 	height: 43px;
 	margin: 8px 15px 0;
 }
-
+.index-forYou-price span:nth-of-type(2){
+	color:#969896;
+}
+.index-forYou-price em:nth-of-type(1){
+	font-style: normal;
+	font-size:20px;
+	color:#ff4a49;
+}
+.index-forYou-price em:nth-of-type(2){
+	font-style: normal;
+	text-decoration:line-through;
+	color:#666;
+}
 .index-forYou-btn {
 	display: block;
 	width: 36px;
@@ -658,4 +670,106 @@ a {
 	position: absolute;
 	right: 5px;
 	bottom: 5px;
+}
+
+.index-today{
+	width:1100px;
+	margin:25px auto;
+}
+.index-today-tit {
+	height: 36px;
+	padding: 15px;
+	line-height: 18px;
+}
+
+.index-today-tit h3 {
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+.index-today-tit h3 span {
+	font-size: 18px;
+	font-weight: 100;
+	color: #666666;
+	margin-left: 15px;
+}
+/*.index-today-list{
+	
+}*/
+.index-today-list1{
+	width:1098px;
+	height:350px;
+	border:1px solid #CCCCCC;
+	padding:6px 0;
+	margin-bottom:15px;
+	background:white;
+}
+.today-bigPic{
+	float:left;
+	display: block;
+	width:750px;
+	height:350px;
+	margin-left:6px;
+}
+.today-bigPic img{
+	width:750px;
+	height:350px;
+}
+.today-right{
+	float:right;
+	width:306px;
+	height:350px;
+	padding:0 18px;
+}
+.today-right a{
+	display:block;
+	float:left;
+	width:276px;
+	height:80px;
+	margin-top:-1px;
+	padding:18px 15px;
+	border-top:1px dashed #666;
+}
+.today-right a:nth-of-type(1){
+	border:none;
+}
+.today-right a:hover p{
+	color:#fa4b9b;
+}
+.today-right-img{
+	float:left;
+	width:78px;
+	height:78px;
+	border:1px solid #CCCCCC;
+}
+.today-right-img img{
+	width:78px;
+	height:78px;
+}
+.today-right-body{
+	width:184px;
+	height:76px;
+	float:right;
+}
+.today-right-body p{
+	margin-top:5px;
+	font-size:13px;
+	color:#404040;
+}
+.today-right-price span:nth-of-type(1){
+	color:#fa4b9b;
+	font-size:14px;
+}
+.today-right-price span:nth-of-type(1) em{
+	font-style: normal;
+	font-size:18px;
+}
+.today-right-price span:nth-of-type(2){
+	color:#404040;
+	font-size:14px;
+	text-decoration: line-through;
+}
+.today-right-price span:nth-of-type(2) em{
+	font-style: normal;
 }
