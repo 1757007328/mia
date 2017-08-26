@@ -561,7 +561,6 @@ a {
 	width: 1100px;
 	height: 737px;
 	margin: 25px auto 0;
-	background: white;
 }
 
 .index-forYou-tit {
@@ -585,6 +584,7 @@ a {
 	float: left;
 	width: 1100px;
 	overflow: hidden;
+	background: white;
 	border-left: 1px solid #969896;
 	border-top: 1px solid #969896;
 }
@@ -617,7 +617,7 @@ a {
 
 .index-forYou-tit {
 	height: 36px;
-	padding: 15px;
+	padding: 10px 15px;
 	line-height: 18px;
 }
 
@@ -625,7 +625,7 @@ a {
 	float: left;
 	width: 84px;
 	height: 43px;
-	margin: 8px 15px 0;
+	margin: 0 15px;
 }
 
 .index-forYou-price span:nth-of-type(2) {
@@ -655,18 +655,18 @@ a {
 	border-radius: 20px;
 	position: absolute;
 	right: 5px;
-	bottom: 25px;
+	bottom: 30px;
 }
 
 .index-forYou-buy {
 	position: absolute;
 	right: 5px;
-	bottom: 5px;
+	bottom: 10px;
 }
 
 .index-today {
 	width: 1100px;
-	margin: 25px auto;
+	margin: 5px auto 25px;
 }
 
 .index-today-tit {
@@ -852,6 +852,7 @@ a {
 }
 .bigBrand-tit-left a span img{
 	width:80px;
+	height:60px;
 	margin-top:10px;
 }
 .bigBrand-tit-right{
