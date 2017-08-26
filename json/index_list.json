@@ -429,7 +429,187 @@
 	],
 	"bigBrand":[
 		{
-			
+			"bigBrandTit":{
+				"link":"#",
+				"ImgSrc":"https://img01.miyabaobei.com/d1/p5/brand/4_brand_logo_img1494999478.png",
+				"ImgName":" 童年时光 CHILDLIFE.",
+				"TitName":"正在参加拼团活动"
+			},
+			"bigBrandBody":[
+				{
+					"link":"#",
+					"ImgSrc":"https://img05.miyabaobei.com/d1/p5/2016/09/30/6c/8a/6c8a31e199d6d5e200d0fe6d5cafc4cc168744390.jpg@base@tag=imgScale&w=447",
+					"Imgword":"拼团",
+					"BodyName":"全球购 | 【秋季补钙】钙镁锌*2瓶 婴儿童宝宝补钙 乳钙片液体钙 美国进口",
+					"BodyNowPrice":"328",
+					"bodyOldPrice":"456"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img06.miyabaobei.com/d1/p5/2016/07/13/c1/e7/c1e7d887e0d9e680f48a2e3fb8f795f5910895491.jpg@base@tag=imgScale&w=447",
+					"Imgword":"拼团",
+					"BodyName":"全球购 | 【秋季补钙】钙镁锌 宝宝补钙 婴儿童乳钙片 液体钙补锌 美国进口",
+					"BodyNowPrice":"168",
+					"bodyOldPrice":"228"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img05.miyabaobei.com/d1/p4/2016/11/14/bf/42/bf425214e35118efbfa72d0c72e2c973924349571.jpg@base@tag=imgScale&w=447",
+					"Imgword":"拼团",
+					"BodyName":"全球购 | 【吃饭香香】钙镁锌+23多种复合维生素宝宝婴儿童补钙 美国进口",
+					"BodyNowPrice":"328",
+					"bodyOldPrice":"456"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img06.miyabaobei.com/d1/p5/2016/08/11/86/6d/866d1df7769baf40dcf1d54cd32ec55c042486055.jpg@base@tag=imgScale&w=447",
+					"Imgword":"拼团",
+					"BodyName":"全球购 | 【开学必备】三驾马车 紫锥菊滴剂 宝宝婴儿童维VC 美国进口",
+					"BodyNowPrice":"378",
+					"bodyOldPrice":"544"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img05.miyabaobei.com/d1/p5/2016/07/13/cf/a5/cfa5cfbed28d01191a8eccea51cc1172919847652.jpg@base@tag=imgScale&w=447",
+					"Imgword":"拼团",
+					"BodyName":"全球购 | 【开学必备】宝宝维生素C 婴儿童维CVC 三驾马车 美国进口",
+					"BodyNowPrice":"126",
+					"bodyOldPrice":"158"
+				}
+			]
+		},
+		{
+			"bigBrandTit":{
+				"link":"#",
+				"ImgSrc":"https://img01.miyabaobei.com/d1/p5/brand/newlogo/2911.jpg",
+				"ImgName":"路易威登 Louis Vuitton",
+				"TitName":"正在参加拼团活动"
+			},
+			"bigBrandBody":[
+				{
+					"link":"#",
+					"ImgSrc":"https://img05.miyabaobei.com/d1/p5/item/13/1338/1338619_topic_1.jpg@base@tag=imgScale&w=447",
+					"Imgword":"包税 包邮",
+					"BodyName":"全球购 | MINI MONOGRAM女士皮带腰带 M9781W",
+					"BodyNowPrice":"2400",
+					"bodyOldPrice":"2950"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img06.miyabaobei.com/d1/p5/item/13/1328/1328670_topic_1.jpg@base@tag=imgScale&w=447",
+					"Imgword":"包税 包邮",
+					"BodyName":"全球购 | NEVERFULL-GM大号女士手提包",
+					"BodyNowPrice":"8800",
+					"bodyOldPrice":"10200"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img05.miyabaobei.com/d1/p4/item/13/1341/1341224_topic_1.jpg@base@tag=imgScale&w=447",
+					"Imgword":"包税 包邮",
+					"BodyName":"全球购 | NANO PALLAS 手袋 2色可选 M61254",
+					"BodyNowPrice":"7100",
+					"bodyOldPrice":"9200"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img06.miyabaobei.com/d1/p5/item/13/1327/1327598_topic_1.jpg@base@tag=imgScale&w=447",
+					"Imgword":"包税 包邮",
+					"BodyName":"全球购 | NOÉ-BB(MINI)女士包包",
+					"BodyNowPrice":"7200",
+					"bodyOldPrice":"9200"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img05.miyabaobei.com/d1/p4/item/13/1328/1328701_topic_1.jpg@base@tag=imgScale&w=447",
+					"Imgword":"包税 包邮",
+					"BodyName":"全球购 | 经典老花格纹长款皮夹 M60697",
+					"BodyNowPrice":"3000",
+					"bodyOldPrice":"3650"
+				}
+			]
+		},{
+			"bigBrandTit":{
+				"link":"#",
+				"ImgSrc":"https://img01.miyabaobei.com/d1/p5/brand/4_brand_logo_img1494999478.png",
+				"ImgName":" 童年时光 CHILDLIFE.",
+				"TitName":"正在参加拼团活动"
+			},
+			"bigBrandBody":[
+				{
+					"link":"#",
+					"ImgSrc":"https://img05.miyabaobei.com/d1/p5/2016/09/30/6c/8a/6c8a31e199d6d5e200d0fe6d5cafc4cc168744390.jpg@base@tag=imgScale&w=447",
+					"Imgword":"拼团",
+					"BodyName":"全球购 | 【秋季补钙】钙镁锌*2瓶 婴儿童宝宝补钙 乳钙片液体钙 美国进口",
+					"BodyNowPrice":"328",
+					"bodyOldPrice":"456"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img06.miyabaobei.com/d1/p5/2016/07/13/c1/e7/c1e7d887e0d9e680f48a2e3fb8f795f5910895491.jpg@base@tag=imgScale&w=447",
+					"Imgword":"拼团",
+					"BodyName":"全球购 | 【秋季补钙】钙镁锌 宝宝补钙 婴儿童乳钙片 液体钙补锌 美国进口",
+					"BodyNowPrice":"168",
+					"bodyOldPrice":"228"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img05.miyabaobei.com/d1/p4/2016/11/14/bf/42/bf425214e35118efbfa72d0c72e2c973924349571.jpg@base@tag=imgScale&w=447",
+					"Imgword":"拼团",
+					"BodyName":"全球购 | 【吃饭香香】钙镁锌+23多种复合维生素宝宝婴儿童补钙 美国进口",
+					"BodyNowPrice":"328",
+					"bodyOldPrice":"456"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img06.miyabaobei.com/d1/p5/2016/08/11/86/6d/866d1df7769baf40dcf1d54cd32ec55c042486055.jpg@base@tag=imgScale&w=447",
+					"Imgword":"拼团",
+					"BodyName":"全球购 | 【开学必备】三驾马车 紫锥菊滴剂 宝宝婴儿童维VC 美国进口",
+					"BodyNowPrice":"378",
+					"bodyOldPrice":"544"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img05.miyabaobei.com/d1/p5/2016/07/13/cf/a5/cfa5cfbed28d01191a8eccea51cc1172919847652.jpg@base@tag=imgScale&w=447",
+					"Imgword":"拼团",
+					"BodyName":"全球购 | 【开学必备】宝宝维生素C 婴儿童维CVC 三驾马车 美国进口",
+					"BodyNowPrice":"126",
+					"bodyOldPrice":"158"
+				}
+			]
+		},
+		{
+			"bigBrandTit":{
+				"link":"#",
+				"ImgSrc":"https://img01.miyabaobei.com/d1/p5/brand/newlogo/2911.jpg",
+				"ImgName":"路易威登 Louis Vuitton",
+				"TitName":"正在参加拼团活动"
+			},
+			"bigBrandBody":[
+				{
+					"link":"#",
+					"ImgSrc":"https://img05.miyabaobei.com/d1/p5/item/13/1338/1338619_topic_1.jpg@base@tag=imgScale&w=447",
+					"Imgword":"包税 包邮",
+					"BodyName":"全球购 | MINI MONOGRAM女士皮带腰带 M9781W",
+					"BodyNowPrice":"2400",
+					"bodyOldPrice":"2950"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img06.miyabaobei.com/d1/p5/item/13/1328/1328670_topic_1.jpg@base@tag=imgScale&w=447",
+					"Imgword":"包税 包邮",
+					"BodyName":"全球购 | NEVERFULL-GM大号女士手提包",
+					"BodyNowPrice":"8800",
+					"bodyOldPrice":"10200"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img05.miyabaobei.com/d1/p4/item/13/1341/1341224_topic_1.jpg@base@tag=imgScale&w=447",
+					"Imgword":"包税 包邮",
+					"BodyName":"全球购 | NANO PALLAS 手袋 2色可选 M61254",
+					"BodyNowPrice":"7100",
+					"bodyOldPrice":"9200"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img06.miyabaobei.com/d1/p5/item/13/1327/1327598_topic_1.jpg@base@tag=imgScale&w=447",
+					"Imgword":"包税 包邮",
+					"BodyName":"全球购 | NOÉ-BB(MINI)女士包包",
+					"BodyNowPrice":"7200",
+					"bodyOldPrice":"9200"
+				},{
+					"link":"#",
+					"ImgSrc":"https://img05.miyabaobei.com/d1/p4/item/13/1328/1328701_topic_1.jpg@base@tag=imgScale&w=447",
+					"Imgword":"包税 包邮",
+					"BodyName":"全球购 | 经典老花格纹长款皮夹 M60697",
+					"BodyNowPrice":"3000",
+					"bodyOldPrice":"3650"
+				}
+			]
 		}
 	]
 }

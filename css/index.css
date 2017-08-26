@@ -871,12 +871,8 @@ a {
 	width:196px;
 	height:274px;
 	float:left;
-	margin-left:20px;
-	background:red;
+	margin:0 9px;
 	position: relative;
-}
-.bigBrand-body dl:nth-of-type(1){
-	margin:0;
 }
 .bigBrand-body dl dt{
 	width:196px;
@@ -896,6 +892,37 @@ a {
 	color:#fa4b9b;
 	background: rgba(255,255,255,0.6);
 	left:50%;
-	margin-top:-50px;
+	margin-top:-40px;
 	margin-left:-20px;
+}
+.bigBrand-body dl dd p{
+	display: block;
+	width:196px;
+	height:48px;
+	line-height:24px;
+	font-size:14px;
+	overflow: hidden;
+}
+.bigBrand-price{
+	width:196px;
+	height:30px;
+}
+.bigBrand-price span:nth-of-type(1){
+	font-size:14px;
+	color:#fa4b9b;
+	line-height: 30px;
+}
+.bigBrand-price span:nth-of-type(1) em{
+	font-size:18px;
+	font-weight: 800;
+	font-style: normal;
+}
+.bigBrand-price span:nth-of-type(2){
+	font-size:14px;
+	color:#666666;
+	line-height: 30px;
+}
+.bigBrand-price span:nth-of-type(2) em{
+	font-style: normal;
+	text-decoration: line-through;
 }

@@ -301,36 +301,49 @@
 				<h3>大牌尖货<span>全世界的品牌 优惠特卖</span></h3>
 			</div>
 			<div class="index-bigBrand-list">
-				<div class="index-bigBrand-lists">
-					<div class="bigBrand-tit">
-						<div class="bigBrand-tit-left">
-							<a href="#">
-								<span>
-									<img src="https://img04.miyabaobei.com/d1/p3/brand/3647_brand_logo_img1461674089.png">
-								</span> 
-								 优良儿 ULIANGER
-							</a>
+				<script id="bigBrand-list" type="text/html">
+					{{each bigBrand as value3}}
+						
+						<div class="index-bigBrand-lists">
+
+							
+							<div class="bigBrand-tit">
+								<div class="bigBrand-tit-left">
+									<a href="{{value3.bigBrandTit.link}}">
+										<span>
+											<img src="{{value3.bigBrandTit.ImgSrc}}">
+										</span> 
+										 {{value3.bigBrandTit.ImgName}}
+									</a>
+								</div>
+								<a class="bigBrand-tit-right" href="{{value3.bigBrandTit.link}}">{{value3.bigBrandTit.TitName}}</a>
+							</div>
+						
+
+							<div class="bigBrand-body">
+								{{each value3.bigBrandBody as value32}}
+								<a href="{{value32.link}}">
+									<dl>
+										<dt>
+											<img src="{{value32.ImgSrc}}">
+											<span>{{value32.Imgword}}</span>
+										</dt>
+										<dd>
+											<p>{{value32.BodyName}}</p>
+											<div class="bigBrand-price">
+												<span>￥<em>{{value32.BodyNowPrice}}</em></span>
+												<span>￥<em>{{value32.bodyOldPrice}}</em></span>
+											</div>
+										</dd>
+									</dl>
+								</a>
+								{{/each}}
+							</div>
+
 						</div>
-						<a class="bigBrand-tit-right" href="#">正在参加拼团活动</a>
-					</div>
-					<div class="bigBrand-body">
-						<a href="#">
-							<dl>
-								<dt>
-									<img src="https://img05.miyabaobei.com/d1/p5/2017/05/16/99/64/9964a2a1bbe5f305b9c4caa88be978fe049337604.jpg@base@tag=imgScale&w=447">
-									<span>拼团</span>
-								</dt>
-								<!--<dd>
-									<p>小超人连体儿童游泳衣卡通宝宝婴幼儿泡温泉泳装</p>
-									<div class="bigBrand-price">
-										<span>￥<em>99</em></span>
-										<span>￥<em>199</em></span>
-									</div>
-								</dd>-->
-							</dl>
-						</a>
-					</div>
-				</div>
+						
+					{{/each}}
+				</script>
 			</div>
 		</div>
 		

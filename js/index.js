@@ -54,6 +54,9 @@ $(function() {
 
 		var html1 = template("today-list", data);
 		$(".index-today-list").html(html1);
+		
+		var html2 = template("bigBrand-list", data);
+		$(".index-bigBrand-list").html(html2);
 	})
 
 })
