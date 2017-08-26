@@ -28,39 +28,32 @@ $(function() {
 			move();
 		}, 3000);
 	});
-	
 
-	
-	
-	$("#index-nav-list ul").on("mouseenter","li",function(){
+	$("#index-nav-list ul").on("mouseenter", "li", function() {
 		$(".navCon").show();
-		var index=$(this).index();
-		$.get("json/nav_data.json",function(data){
-			var html = template("navCon",data[index]);
+		var index = $(this).index();
+		$.get("json/nav_data.json", function(data) {
+			var html = template("navCon", data[index]);
 			$(".navCon").html(html);
-			
+
 		})
-		
+
 	});
-	
-	
-	
-	
-	
-	$("#index-nav-list").on("mouseleave",function(){
+
+	$("#index-nav-list").on("mouseleave", function() {
 		$(".navCon").hide();
 	})
-	
-	$.get("json/nav.json",function(data){
-		var html = template("nav",data);
+
+	$.get("json/nav.json", function(data) {
+		var html = template("nav", data);
 		$("#index-nav-list ul").html(html);
 	})
-	$.get("json/index_list.json",function(data){
-		var html = template("index-list1",data);
+	$.get("json/index_list.json", function(data) {
+		var html = template("index-list1", data);
 		$(".index-forYou-lists").html(html);
-		
-		var html1 = template("today-list",data);
+
+		var html1 = template("today-list", data);
 		$(".index-today-list").html(html1);
 	})
-	
+
 })

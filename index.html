@@ -101,64 +101,53 @@
 								
 									</strong>
 									<p>
-									{{each value.navListBody as item1}}
-									<a href="#">{{item1}}</a>
-									{{/each}}
+										{{each value.navListBody as item1}}
+										<a href="#">{{item1}}</a>
+										{{/each}}
 									</p>
-								</li>	
+								</li>
 								{{/each}}
 							</script>
 						</ul>
-						
-						
+
 						<div class="navCon">
 							<script id="navCon" type="text/html">
 								<div class="navCon-left">
-									
-										{{each subNavLeft as value}}
-										<dl>
-											<dt>
+
+									{{each subNavLeft as value}}
+									<dl>
+										<dt>
 												{{value.LeftTit}}
 											</dt>
-											<dd>
-												{{each value.LeftBody as value2}}
-													<a href="#">{{value2}}</a>
-												{{/each}}
-											</dd>
-										</dl>
-										{{/each}}
+										<dd>
+											{{each value.LeftBody as value2}}
+											<a href="#">{{value2}}</a>
+											{{/each}}
+										</dd>
+									</dl>
+									{{/each}}
 									</dl>
 								</div>
 								<div class="navCon-right">
-									
-										{{each subNavRight as value2}}
-										<dl>
-											<dt>
+
+									{{each subNavRight as value2}}
+									<dl>
+										<dt>
 												{{value2.RightTit}}
-											</dt>
-											
-												{{each value2.ImgSrc as value21}}
-												<dd>
-													<a href="#"><img src="{{value21}}"/></a>
-												</dd>
-												{{/each}}
-											
-										</dl>
+											</dt> {{each value2.ImgSrc as value21}}
+										<dd>
+											<a href="#"><img src="{{value21}}" /></a>
+										</dd>
 										{{/each}}
-									
+
+									</dl>
+									{{/each}}
+
 								</div>
 							</script>
-							
-							
-							
-							
-							
-							
-							
-							
+
 						</div>
-						
-						
+
 					</div>
 				</div>
 			</div>
@@ -228,30 +217,30 @@
 			<div class="index-forYou-lists">
 				<script id="index-list1" type="text/html">
 					{{each toyou as list1}}
-						<a href="{{list1.link}}" title="{{list1.ImgTit}}">
-							<dl>
-								<dt>
+					<a href="{{list1.link}}" title="{{list1.ImgTit}}">
+						<dl>
+							<dt>
 										<img src="{{list1.ImgSrc}}">
 									</dt>
-								<dd>
-									<div class="index-forYou-tit">
-										<p>{{list1.shopName}}</p>
-										<span>{{list1.ImgTit}}</span>
-									</div>
-									<div class="index-forYou-price">
-										<span>拼团价￥</span><em>{{list1.NowPrice}}</em><br />
-										<span>市场价</span><em>￥{{list1.OldPrice}}</em>
-									</div>
-									<span class="index-forYou-btn">去拼团</span><br />
-									<span class="index-forYou-buy">{{list1.somePerson}}人已团</span>
-								</dd>
-							</dl>
-						</a>
+							<dd>
+								<div class="index-forYou-tit">
+									<p>{{list1.shopName}}</p>
+									<span>{{list1.ImgTit}}</span>
+								</div>
+								<div class="index-forYou-price">
+									<span>拼团价￥</span><em>{{list1.NowPrice}}</em><br />
+									<span>市场价</span><em>￥{{list1.OldPrice}}</em>
+								</div>
+								<span class="index-forYou-btn">去拼团</span><br />
+								<span class="index-forYou-buy">{{list1.somePerson}}人已团</span>
+							</dd>
+						</dl>
+					</a>
 					{{/each}}
 				</script>
-				</div>
+			</div>
 		</div>
-		
+
 		<div class="index-today">
 			<div class="index-today-tit">
 				<h3>今日特卖<span>每天10点上新</span></h3>
@@ -259,54 +248,93 @@
 			<div class="index-today-list">
 				<script id="today-list" type="text/html">
 					{{each today as list2}}
-						<div class="index-today-list1">
-							<a class="today-bigPic" href="{{list2.bigPiclink}}">
-								<img src="{{list2.BIgImgSrc}}">
+					<div class="index-today-lists">
+						<a class="today-bigPic" href="{{list2.bigPiclink}}">
+							<img src="{{list2.BIgImgSrc}}">
+						</a>
+						<div class="today-right">
+							<a href="{{list2.firstLink}}">
+								<div class="today-right-img">
+									<img src="{{list2.firstImgSrc}}">
+								</div>
+								<div class="today-right-body">
+									<p>{{list2.firstTit}}</p>
+									<div class="today-right-price">
+										<span>￥<em>{{list2.firstNowPrice}}</em></span>
+										<span>￥<em>{{list2.firstOldPrice}}</em></span>
+									</div>
+								</div>
 							</a>
-							<div class="today-right">
-								<a href="{{list2.firstLink}}">
-									<div class="today-right-img">
-										<img src="{{list2.firstImgSrc}}">
+							<a href="{{list2.secondLink}}">
+								<div class="today-right-img">
+									<img src="{{list2.secondImgSrc}}">
+								</div>
+								<div class="today-right-body">
+									<p>{{list2.secondTit}}</p>
+									<div class="today-right-price">
+										<span>￥<em>{{list2.secondNowPrice}}</em></span>
+										<span>￥<em>{{list2.secondOldPrice}}</em></span>
 									</div>
-									<div class="today-right-body">
-										<p>{{list2.firstTit}}</p>
-										<div class="today-right-price">
-											<span>￥<em>{{list2.firstNowPrice}}</em></span>
-											<span>￥<em>{{list2.firstOldPrice}}</em></span>
-										</div>
+								</div>
+							</a>
+							<a href="{{list2.threeLink}}">
+								<div class="today-right-img">
+									<img src="{{list2.threeImgSrc}}">
+								</div>
+								<div class="today-right-body">
+									<p>{{list2.threeTit}}</p>
+									<div class="today-right-price">
+										<span>￥<em>{{list2.threeNowPrice}}</em></span>
+										<span>￥<em>{{list2.threeOldPrice}}</em></span>
 									</div>
-								</a>
-								<a href="{{list2.secondLink}}">
-									<div class="today-right-img">
-										<img src="{{list2.secondImgSrc}}">
-									</div>
-									<div class="today-right-body">
-										<p>{{list2.secondTit}}</p>
-										<div class="today-right-price">
-											<span>￥<em>{{list2.secondNowPrice}}</em></span>
-											<span>￥<em>{{list2.secondOldPrice}}</em></span>
-										</div>
-									</div>
-								</a>
-								<a href="{{list2.threeLink}}">
-									<div class="today-right-img">
-										<img src="{{list2.threeImgSrc}}">
-									</div>
-									<div class="today-right-body">
-										<p>{{list2.threeTit}}</p>
-										<div class="today-right-price">
-											<span>￥<em>{{list2.threeNowPrice}}</em></span>
-											<span>￥<em>{{list2.threeOldPrice}}</em></span>
-										</div>
-									</div>
-								</a>
-								
-							</div>
+								</div>
+							</a>
+
 						</div>
+					</div>
 					{{/each}}
 				</script>
 			</div>
-		</div>		
+		</div>
+		<div class="index-bigBrand">
+			<div class="index-bigBrand-tit">
+				<h3>大牌尖货<span>全世界的品牌 优惠特卖</span></h3>
+			</div>
+			<div class="index-bigBrand-list">
+				<div class="index-bigBrand-lists">
+					<div class="bigBrand-tit">
+						<div class="bigBrand-tit-left">
+							<a href="#">
+								<span>
+									<img src="https://img04.miyabaobei.com/d1/p3/brand/3647_brand_logo_img1461674089.png">
+								</span> 
+								 优良儿 ULIANGER
+							</a>
+						</div>
+						<a class="bigBrand-tit-right" href="#">正在参加拼团活动</a>
+					</div>
+					<div class="bigBrand-body">
+						<a href="#">
+							<dl>
+								<dt>
+									<img src="https://img05.miyabaobei.com/d1/p5/2017/05/16/99/64/9964a2a1bbe5f305b9c4caa88be978fe049337604.jpg@base@tag=imgScale&w=447">
+									<span>拼团</span>
+								</dt>
+								<!--<dd>
+									<p>小超人连体儿童游泳衣卡通宝宝婴幼儿泡温泉泳装</p>
+									<div class="bigBrand-price">
+										<span>￥<em>99</em></span>
+										<span>￥<em>199</em></span>
+									</div>
+								</dd>-->
+							</dl>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
 		
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
 		<script type="text/javascript" src="js/template.js"></script>
