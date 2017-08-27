@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/shoplist.css" type="text/css" />
+	</head>
+
+	<body>
+		<div class="header-wrap">
+			<div class="header">
+				<a href="javascript"><em class="index-phone">&#xe611;</em>手机蜜芽</a>
+				<ul class="index-list">
+					<li>你好，欢迎来到蜜芽！</li>
+					<li>
+						<a href="javascript">登录</a>
+					</li>
+					<li><em>|</em></li>
+					<li>
+						<a href="javascript">免费注册</a>
+					</li>
+					<li>
+						<a href="javascript">帮助中心</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="index-top-wrap">
+			<div class="index-top">
+				<a id="logo" href="index.html">
+					<h1><img src="https://img.miyabaobei.com/d1/p4/2016/11/15/6e/92/6e9213dbef73af424807b48100a7933a745368439.png"></h1>
+				</a>
+				<div class="index-fr">
+					<div class="index-search">
+						<div class="index-input">
+							<input type="text" value="尤妮佳">
+							<input type="button" value="搜索">
+						</div>
+						<div class="search-words">
+							<a href="javascript">牙胶</a>
+							<a href="javascript" class="pinkcolor">收纳柜</a>
+							<a href="javascript">隔尿垫</a>
+							<a href="javascript">加州宝宝</a>
+							<a href="javascript" class="pinkcolor">安全座椅</a>
+						</div>
+					</div>
+					<div class="shop">
+						<a href="javascript">
+							<em>&#xe600;</em>
+							<span>购物车</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="index-nav-wrap">
+			<div class="index-nav">
+				<ul class="index-nav-ul">
+					<li>
+						<a href="javascript">首页</a>
+					</li>
+					<li>
+						<a href="javascript">纸尿裤</a>
+					</li>
+					<li>
+						<a href="javascript">奶粉</a>
+					</li>
+					<li>
+						<a href="javascript">正品保证<span>&#xe62d;</span></a>
+						<div class="nav-second">
+							<a href="javascript">正品保证</a>
+							<a href="javascript">退货政策</a>
+							<a href="javascript">帮助中心</a>
+						</div>
+					</li>
+					<li>
+						<a href="javascript">早教音乐</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="index-center">
+			<div class="index-nav-left">
+				<div class="index-nav-title">
+					<h2>全部商品分类</h2>
+				</div>
+				<div id="index-nav-list">
+					<ul>
+						<script id="nav" type="text/html">
+							{{each navList as value}}
+							<li>
+								<strong>
+									
+									<a href="#">{{value.navListTit}}</a>
+									
+								
+									</strong>
+								<p>
+									{{each value.navListBody as item1}}
+									<a href="#">{{item1}}</a>
+									{{/each}}
+								</p>
+							</li>
+							{{/each}}
+						</script>
+					</ul>
+
+					<div class="navCon">
+						<script id="navCon" type="text/html">
+							<div class="navCon-left">
+
+								{{each subNavLeft as value}}
+								<dl>
+									<dt>
+												{{value.LeftTit}}
+											</dt>
+									<dd>
+										{{each value.LeftBody as value2}}
+										<a href="#">{{value2}}</a>
+										{{/each}}
+									</dd>
+								</dl>
+								{{/each}}
+								</dl>
+							</div>
+							<div class="navCon-right">
+
+								{{each subNavRight as value2}}
+								<dl>
+									<dt>
+												{{value2.RightTit}}
+											</dt> {{each value2.ImgSrc as value21}}
+									<dd>
+										<a href="#"><img src="{{value21}}" /></a>
+									</dd>
+									{{/each}}
+
+								</dl>
+								{{/each}}
+
+							</div>
+						</script>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="content-tit">
+				<span><a href="#">人气</a></span>
+				<span><a href="#">销量</a></span>
+				<span><a href="#">新品</a></span>
+				<span><a href="#">价格</a></span>
+				<span>
+					<input type="text" placeholder="￥" />-
+					<input type="text" placeholder="￥" />
+					<b>确定</b>
+				</span>
+				<span>
+					<input type="checkbox" value="只显示有货" />只显示有货
+				</span>
+			</div>
+			
+			<div class="content-body">
+				<div class="commodity">
+					<dl>
+						<dt>
+							<a href="#">
+								<img src="https://img05.miyabaobei.com/d1/p5/2017/05/08/2b/03/2b03dd39488bf4309e7bb4e5adab1d6a565639803.jpg@base@tag=imgScale&w=447" title="玛呖德 紫米面包黑米夹心奶酪切片三明治1100g/箱" />
+							</a>
+						</dt>
+						<dd>
+							<div class="commodityPrice">
+								<span>￥<em>20.5</em></span>
+								<span>￥<em>65.9</em></span>
+							</div>
+							<a href="#" title="玛呖德 紫米面包黑米夹心奶酪切片三明治1100g/箱">玛呖德 紫米面包黑米夹心奶酪切片三明治1100g/箱</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			
+		</div>
+
+		
+
+		<div class="footer">
+			<div class="footer1-wrap">
+				<div class="footer1">
+					<a href="#">
+						<dl>
+							<dt>
+								<i>&#xe613;</i>
+							</dt>
+							<dd>
+								<p>可信赖</p>
+								<span>进口母婴特卖</span>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt>
+								<i>&#xe61f;</i>
+							</dt>
+							<dd>
+								<p>无忧</p>
+								<span>正品保证</span>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt>
+								<i>&#xe61d;</i>
+							</dt>
+							<dd>
+								<p>7天</p>
+								<span>无理由退货</span>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt>
+								<i>&#xe688;</i>
+							</dt>
+							<dd>
+								<p>恒温仓</p>
+								<span>完善的货物仓储</span>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt>
+								<i>&#xe604;</i>
+							</dt>
+							<dd>
+								<p>24小时</p>
+								<span>快速发货</span>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt>
+								<i>&#xe610;</i>
+							</dt>
+							<dd>
+								<p>100万</p>
+								<span>妈妈口碑信赖</span>
+							</dd>
+						</dl>
+					</a>
+				</div>
+			</div>
+			
+			<div class="footer2">
+				<div class="footer2-nav">
+					<ul>
+						<li>使用帮助</li>
+						<li><a href="#">新手指南</a></li>
+						<li><a href="#">蜜粉值体系</a></li>
+						<li><a href="#">蜜豆体系</a></li>
+						<li><a href="#">正品承诺</a></li>
+					</ul>
+					<ul>
+						<li>支付方式</li>
+						<li><a href="#">支付方式</a></li>
+						<li><a href="#">支付流程</a></li>
+						<li><a href="#">跨境进口税</a></li>
+					</ul>
+					<ul>
+						<li>配送方式</li>
+						<li><a href="#">包邮政策</a></li>
+						<li><a href="#">发货时间</a></li>
+						<li><a href="#">配送区域</a></li>
+						<li><a href="#">验货签收</a></li>
+					</ul>
+					<ul>
+						<li>售后服务</li>
+						<li><a href="#">退货政策</a></li>
+						<li><a href="#">退货流程</a></li>
+						<li><a href="#">退款方式</a></li>
+					</ul>
+					<ul>
+						<li>联系方式</li>
+						<li>总裁邮箱 ceo@mia.com</li>
+						<li>商务合作 bd@mia.com</li>
+						<li>媒体合作 pr@mia.com</li>
+						<li>招商中心 zhaoshang@mia.com</li>
+						<li>企业采购 qiye@mia.com</li>
+					</ul>
+				</div>
+				<div class="footer2-right">
+					<h3>关注蜜芽</h3>
+					<div class="footer2-r1">
+						<ul>
+							<li>
+								<img src="https://img.miyabaobei.com/d1/p4/2016/11/15/3e/f6/3ef603e61e175352d66addb2b55722b2978255723.jpg" />
+							</li>
+							<li>
+								<a href="#">
+									<img src="https://file04.miyabaobei.com/resources/images/index_fd_wb.gif"/>
+								</a>
+								<div class="imghover">
+										<img src="https://file04.miyabaobei.com/resources/images/index_fd_wx.gif" />
+									<span>
+										<img src="https://img.miyabaobei.com/d1/p4/2016/11/15/f9/5d/f95d91315ebdb1f30c256c911c300dff979622189.png" />
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer3-wrap">
+				<div class="footer3">
+						<p>
+							<a href="#">关于蜜芽</a>|
+							<a href="#">加入蜜芽</a>|
+							<a href="#">商务合作</a>|
+							<a href="#">帮助中心</a>|
+							<a href="#">联系我们</a>|
+							<a href="#">友情链接</a>|
+							<a href="#">触屏版</a>|
+							<a href="#">媒体报道</a>|
+							<a href="#">妈米计划</a>
+						</p>
+						<p>京公网安备：11010502027270 | 营业执照：91110105582599307U | 食品经营许可证：SP1101051410296669 | 出版物经营许可证：新出发京零字第朝160088号 | 京ICP证140430号 </p>
+						<p>京ICP备14006215号 | 员工舞弊举报：jiancha@mia.com 电话：010-56733467</p>
+						<p>通过本网站直接或者间接地推销商品或者服务的商业宣传活动均属“广告”</p>
+						<p>Copyright © 2017 北京花旺在线商贸有限公司 Mia.com 保留一切权利。</p>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+
+
+
+
+
+
+	<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="../js/template.js"></script>
+	<script type="text/javascript" src="../js/shoplist.js" ></script>
+	</body>
+
+</html>
