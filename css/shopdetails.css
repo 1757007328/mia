@@ -674,6 +674,7 @@ a {
 }
 .details-right-check{
 	height:56px;
+	padding:10px 0;
 }
 .details-right-check dt{
 	display: inline-block;
@@ -696,9 +697,138 @@ a {
 	width:52px;
 	height:52px;
 }
+.details-right-number{
+	height:30px;
+	padding:15px 1px;
+}
+.details-right-number i{
+	line-height:30px;
+	padding-left:15px;
+	font-size:16px;
+	color:#666;
+}
+.details-right-number b{
+	display: inline-block;
+	font-weight: 400;
+	margin-left:20px;
+	height:28px;
+	border:1px solid #666666;
+}
+.details-right-number span{
+	display: inline-block;
+	width:24px;
+	line-height: 28px;
+	text-align: center;
+	font-size:18px;
+	cursor: pointer;
+	background:#CCCCCC;
+	color:#666;
+}
+
+.details-right-number em{
+	padding:0 8px;
+}
+.details-right-pay{
+	height:76px;
+	padding:5px 0;
+}
+.details-right-pay li{
+	height:74px;
+	float:left;
+	margin-right:20px;
+	text-align: center;
+	border-radius:5px;
+	cursor: pointer;
+}
+.details-right-pay li:nth-of-type(1){
+	width:218px;
+	border:2px solid #ff4a49;
+}
+.details-right-pay li:nth-of-type(1) em{
+	display: block;
+	padding-top:8px;
+	height:30px;
+	font-size:22px;
+	color:#ff4a49;
+}
+.details-right-pay li:nth-of-type(1) p{
+	font-size:18px;
+	color:#ff4a49;
+}
 
 
+.details-right-pay li:nth-of-type(2){
+	width:218px;
+	border:2px solid #ff4a49;
+	background:#ff4a49;
+}
+.details-right-pay li:nth-of-type(2) em{
+	display: block;
+	padding-top:8px;
+	height:30px;
+	font-size:22px;
+	color:#fff;
+}
+.details-right-pay li:nth-of-type(2) p{
+	font-size:18px;
+	color:#fff;
+}
 
+.details-right-pay li:nth-of-type(3){
+	float:right;
+	line-height:74px;
+	width:68px;
+	border:1px solid #666;
+	font-size:16px;
+}
+
+.details-right-data{
+	padding:10px 0;
+	line-height:33px;
+	color:#666;
+}
+.details-right-data em{
+	margin-left:10px;
+}
+.details-right-tell{
+	height:16px;
+	padding-bottom:15px;
+	color:#666;
+}
+.details-right-active {
+	height:16px;
+	color:#666;
+}
+.details-right-active li {
+	float:left;
+	margin-right:20px;
+}
+
+.details-introduce{
+	margin-top:20px;
+	height:300px;
+	min-height: 300px;
+	height:auto!important;
+}
+.details-introduce:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+.details-introduce-tit{
+	font-size:16px;
+	background:pink;
+	padding:10px 20px;
+}
+.details-introduce-img{
+	width:750px;
+	float:left;
+}
+.details-introduce-img img{
+	width:750px;
+}
 
 
 
