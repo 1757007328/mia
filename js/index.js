@@ -58,5 +58,24 @@ $(function() {
 		var html2 = template("bigBrand-list", data);
 		$(".index-bigBrand-list").html(html2);
 	})
-
+	
+	
+	
+	//侧边栏功能js
+	$(window).scroll(function(){
+		if($(this).scrollTop()>200){
+			$(".adtip").css("display","block");
+		}else{
+			$(".adtip").css("display","none");
+		}
+		
+	})
+	$(".weixin").hover(function(){
+		$(".weixin img").css("display","block").animate({left: '-160px'},700);
+	},function(){
+		$(".weixin img").css("display","none").animate({left: '-240px'},0.1);;
+	})
+	$(".gotop").click(function(){
+		$("body,html").animate({"scrollTop":0},800);
+	})
 })

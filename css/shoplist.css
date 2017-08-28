@@ -557,16 +557,93 @@ a {
 .commodityPrice{
 	height:24px;
 	margin:5px 0;
+	line-height: 24px;
 }
 .commodityPrice span:nth-of-type(1){
 	float:left;
 	color:#f450a2;
 	font-size:14px;
 }
+.commodityPrice span em{
+	font-style: normal;
+}
+.commodityPrice span:nth-of-type(1) em{
+	font-size:18px;
+	font-weight: 600;
+}
 .commodityPrice span:nth-of-type(2){
 	float:right;
 	font-size:12px;
 	color:#969896;
+	text-decoration: line-through;
+}
+.commodity dl dd a{
+	font-size:14px;
+	color:#666;
+}
+
+.commodity dl dd a:hover{
+	color:#fa4b9b;
+}
+
+.adtip{
+	display: none;
+}
+.adtipleft{
+	width:100px;
+	height:248px;
+	position:fixed;
+	left:0;
+	bottom:100px;
+}
+.adtip-right ul{
+	width:52px;
+	position:fixed;
+	right:50px;
+	bottom:100px;
+	border-radius:7px;
+	background:white;
+	text-align: center;
+	border:1px solid #CCCCCC;
+}
+.adtip-right  em{
+	display: block;
+	font-style: normal;
+	font-family: iconfont;
+	font-size:20px;
+	line-height:20px;
+	padding:4px 0 2px;
+	color:#fa4b9b;
+}
+.adtip-right ul li{
+	padding-bottom:4px;
+	cursor: pointer;
+	border-bottom:1px solid #CCCCCC;
+}
+.adtip-right ul li:nth-of-type(1):hover span{
+	color:#fa4b9b;
+}
+
+.adtip-right ul .gotop{
+	border: none;
+	background:#fa4b9b;
+	border-radius:0 0 7px 7px;
+}
+.gotop i{
+	font-family:iconfont;
+	font-style: normal;
+	font-size:22px;
+	color:white;
+}
+
+.weixin{
+	position:relative;
+}
+.weixin img{
+	position: absolute;
+	top:-157px;
+	left:-240px;
+	display:none;
 }
 
 
@@ -586,10 +663,12 @@ a {
 
 
 
+.footer{
+	background:white;
+}
 .footer1-wrap{
 	width:100%;
 	border-top:1px solid #dfdfdf;
-	
 }
 .footer1{
 	width:1100px;
@@ -678,6 +757,7 @@ a {
 .footer2-r1 li:nth-of-type(2){
 	margin-left:5px;
 	position: relative;
+	z-index=1;
 }
 .footer2-r1 li:nth-of-type(2) img{
 	width:76px;

@@ -1,4 +1,4 @@
-//商品列表页Javascript
+//商品详情页Javascript
 $(function() {
 	
 	$("#index-nav-list ul").on("mouseenter", "li", function() {
@@ -20,10 +20,7 @@ $(function() {
 		var html = template("nav", data);
 		$("#index-nav-list ul").html(html);
 	})
-	$.get("../json/index_list.json",function(data){
-		var html = template("commodityList",data);
-		$(".content-body").html(html);
-	})
+	
 	
 	$(window).scroll(function(){
 		if($(this).scrollTop()>200){

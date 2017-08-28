@@ -3,8 +3,8 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>商品列表</title>
-		<link rel="stylesheet" href="../css/shoplist.css" type="text/css" />
+		<title>详情页</title>
+		<link rel="stylesheet" href="../css/shopdetails.css" type="text/css" />
 	</head>
 
 	<body>
@@ -179,48 +179,29 @@
 			</div>
 		</div>
 		<div class="content">
-			<div class="content-tit">
-				<span><a href="#">人气</a></span>
-				<span><a href="#">销量</a></span>
-				<span><a href="#">新品</a></span>
-				<span><a href="#">价格</a></span>
-				<span>
-					<input type="text" placeholder="￥" />-
-					<input type="text" placeholder="￥" />
-					<b>确定</b>
-				</span>
-				<span>
-					<input type="checkbox" value="只显示有货" />只显示有货
-				</span>
+			<div class="details-tit">
+				<a href="#">蜜芽官网 </a>&gt;<a href="#">西式糕点</a>&gt;<a href="#">玛呖德</a> <span>紫米面包黑米夹心奶酪切片三明治1100g/箱</span>
 			</div>
-			
-			<div class="content-body">
-				<script id="commodityList" type="text/html">
-					{{each shopList as value3}}
-						<div class="commodity">
-							<dl>
-								<dt>
-									<a href="{{value3.link}}">
-										<img src="{{value3.ImgSrc}}" title="{{value3.Tit}}" />
-									</a>
-								</dt>
-								<dd>
-									<div class="commodityPrice">
-										<span>￥<em>{{value3.NewPrice}}</em></span>
-										<span>￥<em>{{value3.OldPrice}}</em></span>
-									</div>
-									<a href="{{value3.link}}" title="{{value3.Tit}}">{{value3.Tit}}</a>
-								</dd>
-							</dl>
-						</div>
-					{{/each}}
-				</script>
+			<div class="details-head">
+				<div class="details-left">
+					<div class="details-bigImg">
+						<img class="select" src="https://img01.miyabaobei.com/d1/p5/2017/05/08/2b/03/2b03dd39488bf4309e7bb4e5adab1d6a565639803.jpg" />
+						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/bb/b9/bbb9d553f8c5afc57cc22ce7008c8958565656293.jpg" />
+						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/b0/00/b000a1366e3a3ce87c24cdcd6578ffe6565667441.jpg" />
+						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/09/a8/09a8557619c4ea36e160684a2954367f565679681.jpg" />
+					</div>
+					<div class="details-smallImg">
+						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/2b/03/2b03dd39488bf4309e7bb4e5adab1d6a565639803.jpg" />
+						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/bb/b9/bbb9d553f8c5afc57cc22ce7008c8958565656293.jpg" />
+						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/b0/00/b000a1366e3a3ce87c24cdcd6578ffe6565667441.jpg" />
+						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/09/a8/09a8557619c4ea36e160684a2954367f565679681.jpg" />
+					</div>
+				</div>
+				<div class="details-right">
+					
+				</div>
 			</div>
-			
 		</div>
-
-		
-
 		<div class="footer">
 			<div class="footer1-wrap">
 				<div class="footer1">
@@ -384,7 +365,7 @@
 
 	<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
 	<script type="text/javascript" src="../js/template.js"></script>
-	<script type="text/javascript" src="../js/shoplist.js" ></script>
+	<script type="text/javascript" src="../js/shopdetails.js" ></script>
 	</body>
 
 </html>
