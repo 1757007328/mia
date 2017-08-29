@@ -19,7 +19,7 @@ $(function() {
 		clearInterval(iTem);
 		$('.lunbo-pic li').eq(j).fadeIn(500).siblings().fadeOut(500);
 		$('.lunbo-nav li').eq(j).addClass('select').siblings().removeClass('select');
-	})
+	});
 
 	$('.lunbo-pic li').hover(function() {
 		clearInterval(iTem);
@@ -42,12 +42,12 @@ $(function() {
 
 	$("#index-nav-list").on("mouseleave", function() {
 		$(".navCon").hide();
-	})
+	});
 
 	$.get("json/nav.json", function(data) {
 		var html = template("nav", data);
 		$("#index-nav-list ul").html(html);
-	})
+	});
 	$.get("json/index_list.json", function(data) {
 		var html = template("index-list1", data);
 		$(".index-forYou-lists").html(html);
@@ -57,7 +57,7 @@ $(function() {
 		
 		var html2 = template("bigBrand-list", data);
 		$(".index-bigBrand-list").html(html2);
-	})
+	});
 	
 	
 	
@@ -69,13 +69,13 @@ $(function() {
 			$(".adtip").css("display","none");
 		}
 		
-	})
+	});
 	$(".weixin").hover(function(){
 		$(".weixin img").css("display","block").animate({left: '-160px'},700);
 	},function(){
 		$(".weixin img").css("display","none").animate({left: '-240px'},0.1);;
-	})
+	});
 	$(".gotop").click(function(){
 		$("body,html").animate({"scrollTop":0},800);
 	})
-})
+});

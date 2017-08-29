@@ -9,7 +9,7 @@ $(function(){
 	$("#verinumba").click(function(){
 		num();
 		$("#verinumba").html(number);
-	})
+	});
 	$("#verinumba").html(number);
 	//结束验证码生成
 	//进行数据验证(本地)
@@ -52,13 +52,9 @@ $(function(){
 				}
 			}
 		}
-	})
-	
-	
+	});
+
 	$("input").focus(function(){
 		$(".tit").css("display","none");
 	})
-	
-	
-	
-})
+});

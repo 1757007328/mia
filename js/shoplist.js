@@ -14,16 +14,16 @@ $(function() {
 
 	$("#index-nav-list").on("mouseleave", function() {
 		$(".navCon").hide();
-	})
+	});
 
 	$.get("../json/nav.json", function(data) {
 		var html = template("nav", data);
 		$("#index-nav-list ul").html(html);
-	})
+	});
 	$.get("../json/index_list.json",function(data){
 		var html = template("commodityList",data);
 		$(".content-body").html(html);
-	})
+	});
 	
 	$(window).scroll(function(){
 		if($(this).scrollTop()>200){
@@ -32,13 +32,13 @@ $(function() {
 			$(".adtip").css("display","none");
 		}
 		
-	})
+	});
 	$(".weixin").hover(function(){
 		$(".weixin img").css("display","block").animate({left: '-160px'},700);
 	},function(){
 		$(".weixin img").css("display","none").animate({left: '-240px'},0.1);;
-	})
+	});
 	$(".gotop").click(function(){
 		$("body,html").animate({"scrollTop":0},300);
 	})
-})
+});
