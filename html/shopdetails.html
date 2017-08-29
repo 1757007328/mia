@@ -10,18 +10,18 @@
 	<body>
 		<div class="header-wrap">
 			<div class="header">
-				<a href="javascript"><em class="index-phone">&#xe611;</em>手机蜜芽</a>
+				<a href="#"><em class="index-phone">&#xe611;</em>手机蜜芽</a>
 				<ul class="index-list">
 					<li>你好，欢迎来到蜜芽！</li>
 					<li>
-						<a href="javascript">登录</a>
+						<a href="#">登录</a>
 					</li>
 					<li><em>|</em></li>
 					<li>
-						<a href="javascript">免费注册</a>
+						<a href="#">免费注册</a>
 					</li>
 					<li>
-						<a href="javascript">帮助中心</a>
+						<a href="#">帮助中心</a>
 					</li>
 				</ul>
 			</div>
@@ -38,15 +38,15 @@
 							<input type="button" value="搜索">
 						</div>
 						<div class="search-words">
-							<a href="javascript">牙胶</a>
-							<a href="javascript" class="pinkcolor">收纳柜</a>
-							<a href="javascript">隔尿垫</a>
-							<a href="javascript">加州宝宝</a>
-							<a href="javascript" class="pinkcolor">安全座椅</a>
+							<a href="#">牙胶</a>
+							<a href="#" class="pinkcolor">收纳柜</a>
+							<a href="#">隔尿垫</a>
+							<a href="#">加州宝宝</a>
+							<a href="#" class="pinkcolor">安全座椅</a>
 						</div>
 					</div>
 					<div class="shop">
-						<a href="javascript">
+						<a href="#">
 							<em>&#xe600;</em>
 							<span>购物车</span>
 						</a>
@@ -58,24 +58,24 @@
 			<div class="index-nav">
 				<ul class="index-nav-ul">
 					<li>
-						<a href="javascript">首页</a>
+						<a href="#">首页</a>
 					</li>
 					<li>
-						<a href="javascript">纸尿裤</a>
+						<a href="#">纸尿裤</a>
 					</li>
 					<li>
-						<a href="javascript">奶粉</a>
+						<a href="#">奶粉</a>
 					</li>
 					<li>
-						<a href="javascript">正品保证<span>&#xe62d;</span></a>
+						<a href="#">正品保证<span>&#xe62d;</span></a>
 						<div class="nav-second">
-							<a href="javascript">正品保证</a>
-							<a href="javascript">退货政策</a>
-							<a href="javascript">帮助中心</a>
+							<a href="#">正品保证</a>
+							<a href="#">退货政策</a>
+							<a href="#">帮助中心</a>
 						</div>
 					</li>
 					<li>
-						<a href="javascript">早教音乐</a>
+						<a href="#">早教音乐</a>
 					</li>
 				</ul>
 			</div>
@@ -179,90 +179,93 @@
 			</div>
 		</div>
 		<div class="content">
-			<div class="details-tit">
-				<a href="#">蜜芽官网 </a>&gt;<a href="#">西式糕点</a>&gt;<a href="#">玛呖德</a> <span>紫米面包黑米夹心奶酪切片三明治1100g/箱</span>
-			</div>
-			<div class="details-head">
-				<div class="details-left">
-					<div class="details-bigImg">
-						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/2b/03/2b03dd39488bf4309e7bb4e5adab1d6a565639803.jpg" class="select" />
-						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/bb/b9/bbb9d553f8c5afc57cc22ce7008c8958565656293.jpg" />
-						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/b0/00/b000a1366e3a3ce87c24cdcd6578ffe6565667441.jpg" />
-						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/09/a8/09a8557619c4ea36e160684a2954367f565679681.jpg" />
+			<script id="detailsBody" type="text/html">
+				{{each details[0] as value1}}
+					
+			
+			
+					<div class="details-tit">
+						<a href="#">蜜芽官网 </a>&gt;<a href="{{value1.link}}">{{value1.tolinkname}}</a>&gt;<a href="{{value1.detailsBrandLink}}">{{value1.detailsBrand}}</a> <span>{{value1.detailsName}}</span>
 					</div>
-					<div class="details-smallImg">
-						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/2b/03/2b03dd39488bf4309e7bb4e5adab1d6a565639803.jpg" />
-						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/bb/b9/bbb9d553f8c5afc57cc22ce7008c8958565656293.jpg" />
-						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/b0/00/b000a1366e3a3ce87c24cdcd6578ffe6565667441.jpg" />
-						<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/09/a8/09a8557619c4ea36e160684a2954367f565679681.jpg" />
+					<div class="details-head">
+						<div class="details-left">
+							<div class="details-bigImg">
+								{{each value1.detailsImg as value11}}
+								<img src="{{value11}}" />
+								{{/each}}
+							</div>
+							<div class="details-smallImg">
+								{{each value1.detailsImg as value11}}
+								<img src="{{value11}}" />
+								{{/each}}
+							</div>
+						</div>
+						<div class="details-right">
+							<div class="details-right-name">
+								<a href="{{value1.detailsBrandLink}}">{{value1.detailsBrand}}</a><span>{{value1.detailsName}}</span>
+							</div>
+							<div class="details-right-tit">
+								<p>{{value1.detailsTit}}</p>
+							</div>
+							<div class="details-right-price">
+								<span>拼团价</span><span>{{value1.newtwoPrice}}</span><i>拼团包邮</i><span>{{value1.oldPrice}}</span><span>已售<em>{{value1.soldNumber}}</em>件</span>
+							</div>
+							<div class="details-right-buy">
+								<div class="details-right-check">
+									<dl>
+										<dt>可选</dt>
+										<dd>
+											<img src="{{value1.detailsImg[0]}}">
+										</dd>
+									</dl>
+								</div>
+								<div class="details-right-number">
+									<i>数量</i><b><span>-</span><em>1</em><span>+</span></b>
+								</div>
+								<div class="details-right-pay">
+									<li>
+										<em>{{value1.newonePrice}}</em>
+										<p>单独购买</p>
+									</li>
+									<li>
+										<em>{{value1.newonePrice}}</em>
+										<p><i>2</i>人拼团</p>
+									</li>
+									<li>收藏</li>
+								</div>
+								<div class="details-right-data">
+									<span>编码:<em>{{value1.shopNumber}}</em></span>
+								</div>
+								<div class="details-right-tell">
+									<p>此商品由蜜芽精选商家发货</p>
+								</div>
+								<div class="details-right-active">
+									<ul>
+										<li>满88包邮</li>
+										<li>商家</li>
+										<li>不支持7天无理由退货</li>
+										<li>假一赔十</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="details-right">
-					<div class="details-right-name">
-						<a href="#">玛呖德</a><span>紫米面包黑米夹心奶酪切片三明治1100g/箱</span>
-					</div>
-					<div class="details-right-tit">
-						<p>【生产日期：现做现发 保质期：10天】精选天然小麦粉、紫米、糯米，甄选优质牛奶，鸡蛋和糖，甜而不腻，软糯可口，好吃的停不下来。早餐还是点心，都很适宜。现做现卖，好吃的不要不要的</p>
-					</div>
-					<div class="details-right-price">
-						<span>拼团价</span><span>￥20.5</span><i>拼团包邮</i><span>￥65.90</span><span>已售<em>3399</em>件</span>
-					</div>
-					<div class="details-right-buy">
-						<div class="details-right-check">
-							<dl>
-								<dt>可选</dt>
-								<dd>
-									<img src="https://img01.miyabaobei.com/d1/p5/2017/05/08/2b/03/2b03dd39488bf4309e7bb4e5adab1d6a565639803.jpg">
-								</dd>
-							</dl>
+				
+					<div class="details-introduce">
+						<div class="details-introduce-tit">
+							<p>商品详情</p>
 						</div>
-						<div class="details-right-number">
-							<i>数量</i><b><span>-</span><em>1</em><span>+</span></b>
-						</div>
-						<div class="details-right-pay">
-							<li>
-								<em>￥32</em>
-								<p>单独购买</p>
-							</li>
-							<li>
-								<em>￥20.5</em>
-								<p><i>2</i>人拼团</p>
-							</li>
-							<li>收藏</li>
-						</div>
-						<div class="details-right-data">
-							<span>编码:<em>1797511</em></span>
-						</div>
-						<div class="details-right-tell">
-							<p>此商品由蜜芽精选商家发货</p>
-						</div>
-						<div class="details-right-active">
-							<ul>
-								<li>满88包邮</li>
-								<li>商家</li>
-								<li>不支持7天无理由退货</li>
-								<li>假一赔十</li>
-							</ul>
+						<div class="details-introduce-img">
+							{{each value1.detailsIntroduceImg as value12}}
+								<img src="{{value12}}" />
+							{{/each}}
 						</div>
 					</div>
-				</div>
-			</div>
-		
-			<div class="details-introduce">
-				<div class="details-introduce-tit">
-					<p>商品详情</p>
-				</div>
-				<div class="details-introduce-img">
-					<img src="https://www.mia.com/resources/images/sp02.gif" />
-					<img src="https://img03.miyabaobei.com/d1/p5/2017/06/06/8b/70/8b70adb0456d126d4fcaee13bc6cce8b194904058.jpg" />
-					<img src="https://img03.miyabaobei.com/d1/p5/2017/06/09/2f/d9/2fd9e6454eabc845382932093ec8386a946632706.jpg" />
-					<img src="https://img03.miyabaobei.com/d1/p5/2017/05/08/ea/3e/ea3e2d1d25e206bd709005b9d26a2adf570875971.jpg" />
-					<img src="https://img03.miyabaobei.com/d1/p5/2017/05/08/5a/8b/5a8ba9df77d9062c7011edc2310c5a13570985046.jpg" />
-					<img src="https://img03.miyabaobei.com/d1/p5/2017/05/08/2a/cf/2acfe8009e8da67370583698adbb6fc5571011129.jpg" />
-					<img src="https://img03.miyabaobei.com/d1/p5/2017/05/08/a6/34/a634e851ff69b1ae8e38e65d9aa84409571838712.jpg" />
-					<img src="https://img.miyabaobei.com/d1/p5/2017/04/19/55/43/55435e31f40e30d8d0edc817749972d2742968754.jpg" />
-				</div>
-			</div>
+			
+			
+				
+			{{/each}}
+		</script>	
 		</div>
 		<div class="footer">
 			<div class="footer1-wrap">
