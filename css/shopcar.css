@@ -145,9 +145,23 @@ a {
 	height: 0;
 	overflow: hidden;
 }
-
-
-
+.shopcar-tit a{
+	width:128px;
+	height:73px;
+	display:block;
+	float:left;
+}
+.shopcar-tit a img{
+	width:128px;
+	height:73px;
+}
+.shopcar-tit span{
+	display: inline-block;
+	float:right;
+	line-height:73px;
+	font-size:16px;
+	color:#fa4b9b;
+}
 
 
 
