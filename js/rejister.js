@@ -17,6 +17,16 @@ $(function(){
 		var name = $("#username").val();
 		var overinumb = $("#verinumb");
 		var oReg = /^1\d{10}$/;
+		
+		var ocheck = document.getElementById("check");
+//			if(ocheck.checked){
+//				alert("111")
+//			}else{
+//				alert("222")
+//			}
+	
+		
+		
 		if(name == ""){
 			$(".tip").css("display","block");
 			$("#tip").html('请输入你的手机号')
@@ -36,18 +46,26 @@ $(function(){
 					$(".tip").css("display","block");
 					$("#tip").html('两次密码须一致');
 				}else{
-					$(".tip").css("display","block");
-					$("#tip").html('恭喜你，注册成功！！3S后跳转到登录界面');
-					setTimeout(function(){
-//						window.open("login.html","aaa");
-						self.location='login.html'; 
-					},3000)
+						if(ocheck.checked == false){
+							$(".tip").css("display","block");
+							$("#tip").html('你还没有点击接受用户协议呢！');
+						}else{
+							$(".tip").css("display","block");
+							$("#tip").html('恭喜你，注册成功！！3S后跳转到登录界面');
+							setTimeout(function(){
+		//						window.open("login.html","aaa");
+								self.location='login.html'; 
+							},3000)
+						}
 					
 				}
 				
 			
 		}
 	})
+	
+	
+	
 	
 	$("input").focus(function(){
 		$(".tip").css("display","none");
