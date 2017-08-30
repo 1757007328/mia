@@ -40,10 +40,24 @@ $(function() {
 	var arrSearch = strSearch.split("=");
 	var id = arrSearch[1]; 
 	$.get("../json/products.json",function(data){
-		var html = "<div class='details-top'><div class='details-left'><div class='details-left-bigImg'><img src='"+data[id].detailImg1+"'><img src='"+data[id].detailImg2+"'><img src='"+data[id].detailImg3+"'><img src='"+data[id].detailImg4+"'></div><div class='details-left-smalImg'><img src='"+data[id].detailImg1+"'><img src='"+data[id].detailImg2+"'><img src='"+data[id].detailImg3+"'><img src='"+data[id].detailImg4+"'></div></div><div class='details-right'><div class='details-right-tit'><h3>"+data[id].title+"</h3></div><div class='details-right-bigtit'><p>"+data[id].bigtit+"</p></div><div class='details-right-price'><span>价格:<i>"+data[id].price+"</i></span><span>"+data[id].oldprice+"</span></div><div class='details-right-check'><span>可选</span><i><img src="+data[id].imgUrl+"></i></div><div class='details-right-pay'><span>数量</span><input type='text' value='1'></div><div class='details-right-goto'><button>加入购物车</button></div><div class='details-right-id'><span>商品ID:"+id+"</span></div><div class='details-right-tellyou'><ul><li>满88包邮</li><li>商家</li><li>不支持7天无理由退货</li><li>假一赔十</li></ul></div></div></div></div><div class='details-body'><div class='details-body-img'><img src='"+data[id].IntroduceImg1+"'><img src='"+data[id].IntroduceImg2+"'><img src='"+data[id].IntroduceImg3+"'><img src='"+data[id].IntroduceImg4+"'><img src='"+data[id].IntroduceImg5+"'><img src='"+data[id].IntroduceImg6+"'></div></div>";
+		var html = "<div class='details-top'><div class='details-left'><div class='details-left-bigImg'><img src='"+data[id].detailImg1+"'><img src='"+data[id].detailImg2+"'><img src='"+data[id].detailImg3+"'><img src='"+data[id].detailImg4+"'></div><div class='details-left-smalImg'><img src='"+data[id].detailImg1+"'><img src='"+data[id].detailImg2+"'><img src='"+data[id].detailImg3+"'><img src='"+data[id].detailImg4+"'></div></div><div class='details-right'><div class='details-right-tit'><h3>"+data[id].title+"</h3></div><div class='details-right-bigtit'><p>"+data[id].bigtit+"</p></div><div class='details-right-price'><span>价格:<i>"+data[id].price+"</i></span><span>"+data[id].oldprice+"</span></div><div class='details-right-check'><span>可选</span><i><img src="+data[id].imgUrl+"></i></div><div class='details-right-pay'><span>数量</span><input type='text' value='1'></div><div class='details-right-goto'><button id='btn' data-id='" + id + "'>加入购物车</button></div><div class='details-right-id'><span>商品ID:"+id+"</span></div><div class='details-right-tellyou'><ul><li>满88包邮</li><li>商家</li><li>不支持7天无理由退货</li><li>假一赔十</li></ul></div></div></div></div><div class='details-body'><div class='details-body-img'><img src='"+data[id].IntroduceImg1+"'><img src='"+data[id].IntroduceImg2+"'><img src='"+data[id].IntroduceImg3+"'><img src='"+data[id].IntroduceImg4+"'><img src='"+data[id].IntroduceImg5+"'><img src='"+data[id].IntroduceImg6+"'></div></div>";
 		
 		$("#content").html(html);
 		$(".details-left-bigImg img:first").addClass('select');
+		$(".details-left-smalImg img").hover(function(){
+			$(".details-left-bigImg img").eq($(this).index()).addClass("select").siblings().removeClass("select");
+			$(this).addClass("smselect").siblings().removeClass("smselect");
+		});
+		$(".details-right-check i").click(function(){
+			$(this).css("border-color","red");
+		})
+		
+		$("#btn").click(function(){
+			var id = $(this).attr("data-id");
+			var num = Number($(this).parent().prev().find('input').val());
+			cookie(id,num,false);
+			console.log($.cookie("cart"));
+		})
 	})
 	
 	

@@ -526,8 +526,11 @@ a {
 	height:68px;
 	float:left;
 	padding:2px;
-	border:1px solid red;
+	border:1px solid #fff;
 	margin-right:15px;
+}
+.details-left-smalImg .smselect{
+	border-color: red;
 }
 .details-right{
 	padding:20px;
@@ -585,7 +588,7 @@ a {
 	height:70px;
 	float: left;
 	margin-left:20px;
-	border:1px solid pink;
+	border:1px solid #fff;
 }
 .details-right-check i img{
 	width:68px;

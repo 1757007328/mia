@@ -163,6 +163,99 @@ a {
 	color:#fa4b9b;
 }
 
+#shopcar{
+	padding-top:100px;
+	height:200px;
+	min-height: 200px;
+	height:auto!important;
+}
+#shopcar:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+
+#shopcar dl{
+	width:260px;
+	height:369px;
+	float:left;
+	margin:5px;
+	padding:1px;
+	border:1px solid #666;
+}
+#shopcar dl dt{
+	width:260px;
+	height:260px;
+}
+#shopcar dl dt img{
+	width:260px;
+	height:260px;
+}
+.car-tit{
+	padding:5px;
+	font-size:14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.car-price{
+	text-align: center;
+	font-size:14px;
+	color:red;
+}
+#shopcar dl dd em{
+	font-style: normal;
+	display: inline-block;
+	padding:0 5px;
+	cursor: pointer;
+	font-size:16px;
+}
+.car-lt{
+	margin-left:80px;
+}
+#shopcar dl dd input{
+	display:inline-block;
+	width:50px;
+	height:20px;
+}
+.car-remove{
+	display:block;
+	width:80px;
+	line-height:24px;
+	text-align: center;
+	margin:5px auto 0;
+	cursor: pointer;
+	border:1px solid red;
+	border-radius:5px;
+}
+
+
+.car-money{
+	padding:20px 40px;
+	height:40px;
+	margin:30px auto;
+	background:pink;
+	border-radius:10px;
+}
+.car-money span:nth-of-type(1){
+	font-size:18px;
+	float:left;
+}
+.car-money span em{
+	font-size:24px;
+	color:red;
+	font-style: normal;
+	padding:0 5px;
+}
+.car-money span:nth-of-type(2){
+	font-size:18px;
+	float:right;
+}
+
+
+
 
 
 
