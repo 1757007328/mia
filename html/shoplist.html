@@ -195,31 +195,11 @@
 			</div>
 			
 			<div class="content-body">
-				<script id="commodityList" type="text/html">
-					{{each shopList as value3}}
-						<div class="commodity">
-							<dl>
-								<dt>
-									<a href="{{value3.link}}">
-										<img src="{{value3.ImgSrc}}" title="{{value3.Tit}}" />
-									</a>
-								</dt>
-								<dd>
-									<div class="commodityPrice">
-										<span>￥<em>{{value3.NewPrice}}</em></span>
-										<span>￥<em>{{value3.OldPrice}}</em></span>
-									</div>
-									<a href="{{value3.link}}" title="{{value3.Tit}}">{{value3.Tit}}</a>
-								</dd>
-							</dl>
-						</div>
-					{{/each}}
-				</script>
+				<div class="commodity">
+				</div>
 			</div>
 			
 		</div>
-
-		
 
 		<div class="footer">
 			<div class="footer1-wrap">
@@ -383,7 +363,9 @@
 
 
 	<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
-	<script type="text/javascript" src="../js/template.js"></script>
+	<script type="text/ecmascript" src="../js/template.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/cart.js"></script>
 	<script type="text/javascript" src="../js/shoplist.js" ></script>
 	</body>
 

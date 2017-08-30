@@ -20,10 +20,7 @@ $(function() {
 		var html = template("nav", data);
 		$("#index-nav-list ul").html(html);
 	});
-	$.get("../json/index_list.json",function(data){
-		var html = template("commodityList",data);
-		$(".content-body").html(html);
-	});
+	
 	
 	$(window).scroll(function(){
 		if($(this).scrollTop()>200){
@@ -41,4 +38,17 @@ $(function() {
 	$(".gotop").click(function(){
 		$("body,html").animate({"scrollTop":0},300);
 	})
+	
+	var $obox = $(".content-body");
+	var $odiv  = $(".commodity");
+	var $odl  = $odiv.find("dl");
+	$.get("../json/products.json",function(data){
+		var html = "";
+		for(var i in data){
+			html += "<div class='commodity'><dl> <dt> <a href='shopdetails.html?id=" + i +"'><img src='"+data[i].imgUrl+"'></a></dt><dd><div class='commodityPrice'><span>￥<em>"+data[i].price+"</em></span><span>￥<em>"+data[i].oldprice+"</em></span></div><a href='detail.html?id=" + i +"'>"+data[i].title+"</a></dd></dl></div>";
+			
+		}
+		$obox.html(html);
+	})
+
 });
