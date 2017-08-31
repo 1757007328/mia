@@ -475,6 +475,11 @@ a {
 	width: 80px;
 	height: 80px;
 }
+#num{
+	font-size:18px;
+	color:red;
+}
+
 
 /*
 	独立内容区 

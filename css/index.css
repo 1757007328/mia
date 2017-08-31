@@ -221,7 +221,9 @@ a {
 	width: 100%;
 	background: #ff3893;
 }
-
+.shop a{
+	cursor: pointer;
+}
 .index-nav {
 	width: 1100px;
 	margin: 0 auto;

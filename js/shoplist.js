@@ -30,6 +30,13 @@ $(function() {
 		}
 		
 	});
+	
+	$(".adtip-right li:first").click(function(){
+//		self.location='../html/shopcar.html';
+		window.open("shopcar.html",'gouwu');
+	});
+	
+	
 	$(".weixin").hover(function(){
 		$(".weixin img").css("display","block").animate({left: '-160px'},700);
 	},function(){

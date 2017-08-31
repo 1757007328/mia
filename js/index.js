@@ -58,7 +58,9 @@ $(function() {
 		var html2 = template("bigBrand-list", data);
 		$(".index-bigBrand-list").html(html2);
 	});
-	
+	$(".shop a").click(function(){
+		window.open("html/shopcar.html",'gouwu');
+	})
 	
 	
 	//侧边栏功能js
